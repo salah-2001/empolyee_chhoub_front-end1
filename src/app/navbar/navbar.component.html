@@ -1,0 +1,50 @@
+
+    <!--Navbar-->
+<mdb-navbar SideClass="navbar shadow-lg navbar-expand-lg navbar-dark unique-color " class="nvhom" [containerInside]="false">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><a class="navbar-brand ml-3" href="#">NosService</a></mdb-navbar-brand>
+  
+    <!-- Collapsible content -->
+    <links>
+          <!-- Links -->
+    <ul class="navbar-nav m-auto">
+        <li class="nav-item active mr-4">
+          <a class="nav-link waves-light" mdbWavesEffect routerLink="/" ><i class="fas fa-home"></i> Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item mr-4">
+          <a class="nav-link waves-light" mdbWavesEffect routerLink="/homeservice">Service</a>
+        </li>
+        <li class="nav-item mr-4">
+          <a class="nav-link waves-light" mdbWavesEffect routerLink="/ajouterservice">Ajouter-service</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link waves-light" routerLink="/contact"> Contact</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link waves-light" mdbWavesEffect routerLink="/nvbaradmin">admin</a>
+          </li>
+      </ul>
+      <!-- Links -->
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-5">
+        <li class="nav-item ">
+            <a class="nav-link waves-light" routerLink="/connecter">
+              <i class='fas fa-user'></i>  connecter
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-light" routerLink="/regester" ><i class="fas fa-user-plus"></i> regester</a>
+          </li>
+        <!-- Dropdown -->
+  
+      </ul>
+      <!-- Links -->
+    </links>
+    <!-- Collapsible content -->
+  
+  </mdb-navbar>
+  <!--/.Navbar-->
+
+  <router-outlet></router-outlet>

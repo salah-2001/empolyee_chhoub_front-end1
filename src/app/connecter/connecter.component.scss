@@ -1,0 +1,22 @@
+.connect_contr{
+    margin-top: 30px;
+    .connect_form{
+        margin-top: 70px;
+        margin-left: 100px;
+    }
+    .connect_p{
+        color: #3f729b;
+    }
+}
+
+@media (max-width: 992px) { 
+    .connect_contr{
+        margin-top: 36px;
+        .connect_form{
+            margin-left: 0px;
+        }
+        .connect_img{
+           display: none;
+        }
+    }
+ }

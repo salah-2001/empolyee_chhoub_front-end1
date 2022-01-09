@@ -1,0 +1,40 @@
+
+
+<app-navbar-ad></app-navbar-ad>
+<div class="container-fluid mt-5 pr-5 pl-5">
+  <div class="card mt-5">
+    <div class="card-header card-header-warning bg-primary text-white text-center" >
+      <h4 class="card-title">Regester-list !</h4>
+    </div>
+    <div class="card-content table-responsive table-full-width text-center ">
+      <table class="table  shadow-lg p-1 mb-5 bg-body rounded">
+        <thead class="text-dark">
+          <th >Regester_id</th>
+          <th >Prénom et Nom</th>
+          <th >Nom d'utilisateur</th>
+          <th >Email</th>
+          <th >Mot de passe</th>
+          <th >Telephone</th>
+          <th >Action</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let list of regester">
+            <th scope="row">{{list.id}}</th>
+            <td>{{list.nom_complet}}</td>
+            <td>{{list.nom_utilisateur}}</td>
+            <td>{{list.email}}</td>
+            <td>{{list.motpasse}}</td>
+            <td>{{list.telephone}}</td>
+            <td>
+              <button class="btn btn-success shadow p-2 " (click)="onupdate(list.id)"><i class="far fa-edit"></i></button>
+              <button class="btn btn-danger shadow p-2" style="margin-left: 15px;" (click)="ondelete(list.id)" ><i class="fas fa-trash-alt "></i></button>
+            </td>
+                
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+
+ 

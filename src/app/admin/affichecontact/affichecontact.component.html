@@ -1,0 +1,39 @@
+
+<app-navbar-ad></app-navbar-ad>
+<div class="container-fluid mt-5 pr-5 pl-5">
+  <div class="card mt-5">
+    <div class="card-header card-header-warning bg-primary text-white text-center" >
+      <h4 class="card-title">Contact-list !</h4>
+    </div>
+    <div class="card-content table-responsive table-full-width text-center ">
+      <table class="table  shadow-lg p-1 mb-5 bg-body rounded">
+        <thead class="text-dark">
+          <th >Contact_id</th>
+          <th >Prénom  </th>
+          <th>Nom</th>
+          <th >Email</th>
+          <th >Telephone</th>
+          <th >Message</th>
+          <th >Action</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let list of contact">
+            <th scope="row">{{list.id}}</th>
+            <td>{{list.prenom}}</td>
+            <td>{{list.nom}}</td>
+            <td>{{list.email}}</td>
+            <td>{{list.telephone}}</td>
+            <td>{{list.message}}</td>
+            <td>
+              <button class="btn btn-success shadow p-2 " (click)="onedit(list.id)" ><i class="far fa-edit"></i></button>
+              <button class="btn btn-danger shadow p-2" style="margin-left: 15px;" (click)="onedelet(list.id)"><i class="fas fa-trash-alt "></i></button>
+            </td>
+                
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+
+ 

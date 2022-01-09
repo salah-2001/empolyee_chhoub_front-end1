@@ -1,0 +1,18 @@
+.regester_contr{
+    margin-top: 33px;
+    .regetser_img{
+        margin-top: 100px;
+    }
+    .regester_p{
+        color: #3f729b;
+    }
+}
+
+@media (max-width: 992px) { 
+    .regester_contr{
+        margin-top: -20px;
+        .regetser_img{
+           display: none;
+        }
+    }
+ }

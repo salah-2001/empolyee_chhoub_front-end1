@@ -1,0 +1,74 @@
+<app-navbar></app-navbar>
+<div class="container regester_contr  shadow-lg p-1 mb-5 bg-body rounded">
+
+    <div class="row">
+        <div class="col-lg-6  regetser_img" >
+            <img src="..\assets\ajouterservice1.png" alt="" srcset="" width="100%">
+        </div>
+        <div class="col-lg-6 ">
+            <!-- Default form register -->
+    <form class="text-center p-3 mt-5 "  method="post"  (ngSubmit)="onsubmit()">
+
+        <p class="h4 mb-4 regester_p">Ajouter Service</p>
+  
+        <div class="form-row mb-4">
+          <div class="col">
+            <!-- First name -->
+            <input [(ngModel)]="ajoutserv.prenom" name="prenom"  type="text" id="prenom" class="form-control" placeholder="Prénom" >
+            <!--<div  class="text-danger alert-danger" style="font-size: 12px;">prenom is not corecet</div>-->
+          </div>
+          <div class="col">
+            <!-- Phone number -->
+            <input [(ngModel)]="ajoutserv.nom" name="nom"   type="text" id="nom" class="form-control" placeholder="Nom" >
+            <!--<div class="text-danger alert-danger">telephone is not corecet</div>-->
+           </div> 
+          
+        </div>
+        <div class="form-row mb-4">
+           <div class="col">
+            <!-- Phone number -->
+            <input [(ngModel)]="ajoutserv.telephone" name="telephone"   type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Téléphoner numéro" aria-describedby="defaultRegisterFormPhoneHelpBlock " required>
+            <!--<div class="text-danger alert-danger">telephone is not corecet</div>-->
+           </div> 
+           <div class="col">
+            <!-- Phone number -->
+            <input [(ngModel)]="ajoutserv.email" name="email" type="email"class="form-control " placeholder="E-mail" >
+            <!--<div class="text-danger alert-danger">telephone is not corecet</div>-->
+           </div> 
+        </div>
+        <div class="form-row mb-4">
+            <div class="col">
+             <!-- Phone number -->
+             <input [(ngModel)]="ajoutserv.ville" name="ville"   type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Ville" aria-describedby="defaultRegisterFormPhoneHelpBlock " required>
+             <!--<div class="text-danger alert-danger">telephone is not corecet</div>-->
+            </div> 
+            <div class="col">
+             <!-- Phone number -->
+             <input [(ngModel)]="ajoutserv.address" name="address"   type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Address" aria-describedby="defaultRegisterFormPhoneHelpBlock " required>
+             <!--<div class="text-danger alert-danger">telephone is not corecet</div>-->
+            </div> 
+            
+         </div>
+         <div class=" mb-4">
+          <!-- Phone number -->
+          <input [(ngModel)]="ajoutserv.typeservice" name="typeservice"   type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Type de Service" aria-describedby="defaultRegisterFormPhoneHelpBlock " required>
+          <!--<div class="text-danger alert-danger">telephone is not corecet</div>-->
+          </div>
+          <div class="form-row mb-3">
+           
+           <div class="col-lg-6">
+            <input [(ngModel)]="ajoutserv.serviceimg" name="serviceimg"  type="file" />
+           </div>
+          </div> 
+
+         <div class="mb-2 ">
+            <textarea [(ngModel)]="ajoutserv.parlevotreservice" name="parlevotreservice" class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Parlez de vous et de votre service"></textarea>
+         </div>
+
+        <!-- Sign up button -->
+        <button mdbBtn color="info" class="my-2" type="submit">Ajouter</button>
+    </form>
+      <!-- Default form register -->
+        </div>
+    </div>
+</div>

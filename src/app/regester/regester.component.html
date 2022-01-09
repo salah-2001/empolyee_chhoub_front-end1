@@ -1,0 +1,56 @@
+<app-navbar></app-navbar>
+<div class="container regester_contr  shadow-lg p-1 mb-5 bg-body rounded">
+
+    <div class="row">
+        <div class="col-lg-6  regetser_img" >
+            <img src="..\assets\regester1.png" alt="" srcset="" width="100%">
+        </div>
+        <div class="col-lg-6 ">
+            <!-- Default form register -->
+    <form class="text-center p-3 mt-5 "  method="post" (ngSubmit)="onsubmit()" >
+
+        <p class="h4 mb-4 regester_p">Regester</p>
+  
+        <div class="form-row mb-4">
+          <div class="col">
+            <!-- First name -->
+            <input  [(ngModel)]="regester.nom_complet" name="nom_complet" type="text" id="prenom" class="form-control" placeholder="Prénom et Nom" >
+            <!--<div  class="text-danger alert-danger" style="font-size: 12px;">prenom is not corecet</div>-->
+          </div>
+          <div class="col">
+            <!-- Last name -->
+            <input  [(ngModel)]="regester.nom_utilisateur" name="nom_utilisateur" type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Nom d'utilisateur" required>
+           <!-- <div class="text-danger  alert-danger">nom is not corecet</div>-->
+          </div>
+        </div>
+        <div class="mb-4">
+         <!-- E-mail -->
+         <input [(ngModel)]="regester.email"   name="email" type="email"class="form-control " placeholder="E-mail" >
+         <!--<div class="text-danger alert-danger">email is not corecet</div>-->
+        </div>
+        <div class="mb-4">
+          <!-- Password -->
+         <input [(ngModel)]="regester.motpasse" name="motpasse" type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Mot de passe" aria-describedby="defaultRegisterFormPasswordHelpBlock" required>
+        <!-- <div class="text-danger alert-danger">motpasse is not corecet</div>-->
+        </div>
+        
+        <div class="">
+         <!-- Phone number -->
+         <input  [(ngModel)]="regester.telephone" name="telephone" type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Téléphoner numéro" aria-describedby="defaultRegisterFormPhoneHelpBlock " required>
+         <!--<div class="text-danger alert-danger">telephone is not corecet</div>-->
+        </div> 
+        <!-- Sign up button -->
+        <button mdbBtn color="info" class="my-2" type="submit">Regester</button>
+        
+      <hr>
+
+      <!-- Terms of service -->
+      <p> Pour connecter cliquez ici
+        <a href="" target="_blank" routerLink="/connecter">connecter</a></p>
+  
+    </form>
+      <!-- Default form register -->
+        </div>
+    </div>
+
+</div>

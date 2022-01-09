@@ -1,0 +1,43 @@
+<app-navbar-ad></app-navbar-ad>
+<div class="container regester_contr">
+
+    <div class="row">
+        <div class="col-lg-6  regetser_img" >
+            <img src="..\assets\regester1.png" alt="" srcset="" width="100%">
+        </div>
+        <div class="col-lg-6">
+            <!-- Default form register -->
+    <form class="text-center   p-3 mt-5"  method="post" (ngSubmit)="onsubmit()">
+
+        <p class="h4 mb-4 regester_p">Mettre à jour Regester</p>
+  
+        <div class="form-row mb-4">
+          <div class="col">
+            <!-- First name -->
+            <input [(ngModel)]="regester.nom_complet" name="nom_complet" type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Prénom et Nom" required>
+          </div>
+          <div class="col">
+            <!-- Last name -->
+            <input [(ngModel)]="regester.nom_utilisateur" name="nom_utilisateur" type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Nom d'utilisateur" required>
+          </div>
+        </div>
+  
+        <!-- E-mail -->
+        <input [(ngModel)]="regester.email" name="email" type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail" required>
+  
+        <!-- Password -->
+        <input [(ngModel)]="regester.motpasse" name="motpasse" type="password" id="defaultRegisterFormPassword" class="form-control mb-4" placeholder="Mot de passe" aria-describedby="defaultRegisterFormPasswordHelpBlock" required>
+
+  
+        <!-- Phone number -->
+        <input [(ngModel)]="regester.telephone" name="telephone" type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Téléphoner numéro" aria-describedby="defaultRegisterFormPhoneHelpBlock " required>
+  
+        <!-- Sign up button -->
+        <button mdbBtn color="info" class="my-3" type="submit">Mettre à jour Regester</button>
+  
+    </form>
+      <!-- Default form register -->
+        </div>
+    </div>
+
+</div>

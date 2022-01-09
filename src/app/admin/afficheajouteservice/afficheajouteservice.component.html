@@ -1,0 +1,70 @@
+<app-navbar-ad></app-navbar-ad>
+<div class="container-fluid mt-5">
+<div class="card ">
+  <div class="card-header card-header-warning bg-primary text-white text-center" >
+    <h4 class="card-title">informatin_person-list !</h4>
+  </div>
+  <div class="card-content table-responsive table-full-width text-center ">
+    <table class="table  shadow-lg p-1 mb-5 bg-body rounded">
+      <thead class="text-dark">
+        <th >Service_Id</th>
+        <th >Prénom</th>
+        <th >Nom</th>
+        <th >Ville</th>
+        <th >Address</th>
+        <th >Telephone</th>
+        <th >Email</th>
+        <th >Action</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ajout of ajouteserv">
+          <th scope="row">{{ajout.id}}</th>
+              <td>{{ajout.prenom}}</td>
+              <td>{{ajout.nom}}</td>
+              <td>{{ajout.ville}}</td>
+              <td>{{ajout.address}}</td>
+              <td>{{ajout.telephone}}</td>
+              <td>{{ajout.email}}</td>
+              <td>
+                <button class="btn btn-success shadow p-2" (click)="onupdet(ajout.id)" ><i class="far fa-edit"></i></button>
+                <button class="btn btn-danger shadow p-2" style="margin-left: 15px;" (click)="ondelet(ajout.id)"  ><i class="fas fa-trash-alt"></i></button>
+              </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+
+<div class="container-fluid mt-5">
+  <div class="card ">
+    <div class="card-header card-header-warning bg-primary text-white text-center" >
+      <h4 class="card-title">type_service-list !</h4>
+    </div>
+    <div class="card-content table-responsive table-full-width text-center ">
+      <table class="table  shadow-lg p-1 mb-5 bg-body rounded">
+        <thead class="text-dark">
+          <th >Service_Id</th>
+          <th >Type Service</th>
+          <th >Image</th>
+          <th >Message</th>
+          <th >Action</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let ajout of ajouteserv">
+            <th scope="row">{{ajout.id}}</th>
+                <td>{{ajout.typeservice}}</td>
+                <td>{{ajout.serviceimg}}</td>
+                <td>{{ajout.parlevotreservice}}</td>
+                <td>
+                  <button class="btn btn-success shadow p-2" (click)="onupdet(ajout.id)" ><i class="far fa-edit"></i></button>
+                  <button class="btn btn-danger shadow p-2" style="margin-left: 15px;" (click)="ondelet(ajout.id)"  ><i class="fas fa-trash-alt"></i></button>
+                </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+  
